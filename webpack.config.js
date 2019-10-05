@@ -103,6 +103,9 @@ if (isDev) {
     splitChunks: {
       name: 'vendor',
     },
+    runtimeChunk: {
+      name: 'runtime',
+    }
   };
   config.plugins.unshift(
     new CleanWebpackPlugin(),
